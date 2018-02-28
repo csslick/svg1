@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SVG line animation</title>
+  <style>
+    svg path#s1, 
+    svg path#s2,
+    svg path#s3,
+    svg path#s4,
+    svg path#s5{
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation-iteration-count: 1;
+    }
+    svg path#s1{
+      animation: s1 2s linear forwards;
+    }
+    svg path#s2{
+      animation: s1 2s linear forwards;
+      animation-delay: 1s;
+    }
+    svg path#s3{
+      animation: s1 2s linear forwards;
+      animation-delay: 2s;
+    }
+    svg path#s4{
+      animation: s1 2s linear forwards;
+      animation-delay: 3s;
+    }
+    svg path#s5{
+      animation: s1 2s linear forwards;
+      animation-delay: 4s;
+    }
+
+    @keyframes s1 {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+    @keyframes s2 {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+    @keyframes s3 {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+    @keyframes s4 {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+    @keyframes s5 {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+  
+  </style>
+  
+</head>
+<body>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="402.324px" height="156.861px" viewBox="0 0 402.324 156.861" enable-background="new 0 0 402.324 156.861"
+	 xml:space="preserve">
+<g>
+	<path id="s1" fill="none" stroke="#000000" stroke-width="3" d="M43.266,38.748v35.306h40.815V38.748h11.017v84.384H84.081V83.569H43.266
+		v39.562H32.374V38.748H43.266z"/>
+	<path id ="s2" fill="none" stroke="#000000" stroke-width="3" d="M157.697,83.569h-32.802v30.423h36.558v9.14h-47.45V38.748h45.572v9.14
+		h-34.68v26.667h32.802V83.569z"/>
+	<path id="s3" fill="none" stroke="#000000" stroke-width="3" d="M175.6,38.748h10.892v75.244h36.057v9.14H175.6V38.748z"/>
+	<path id="s4" fill="none" stroke="#000000" stroke-width="3" d="M234.691,38.748h10.892v75.244h36.058v9.14h-46.95V38.748z"/>
+	<path id="s5" fill="none" stroke="#000000" stroke-width="3" d="M361.016,80.063c0,29.046-17.652,44.445-39.186,44.445
+		c-22.286,0-37.936-17.277-37.936-42.817c0-26.792,16.651-44.32,39.188-44.32C346.117,37.371,361.016,55.023,361.016,80.063z
+		 M295.538,81.44c0,18.028,9.766,34.179,26.917,34.179c17.277,0,27.043-15.9,27.043-35.056c0-16.777-8.764-34.304-26.918-34.304
+		C304.552,46.26,295.538,62.911,295.538,81.44z"/>
+</g>
+</svg>
+
+
+</body>
+</html>
